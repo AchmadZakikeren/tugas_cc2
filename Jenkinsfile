@@ -15,12 +15,7 @@ pipeline {
             }
         }
 
-        stage('Build Expo (local)') {
-            steps {
-                bat 'npm install'
-                bat 'npx eas build --platform android --local --non-interactive'
-            }
-        }
+       
 
         stage('Build Docker Image') {
             steps {
