@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  mobile-app:
+    build: .
+    ports:
+      - "8081:8081"
+    volumes:
+      - .:/app
+    command: npx expo start --web
